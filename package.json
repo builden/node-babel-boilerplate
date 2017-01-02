@@ -1,0 +1,45 @@
+{
+  "name": "node-babel-boilerplate",
+  "version": "0.1.0",
+  "main": "./dist/index.js",
+  "author": "builden <billdeng@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel ./lib -d ./dist -s",
+    "build:watch": "yarn build -- -w",
+    "start": "babel-node ./lib/index.js",
+    "test": "ava"
+  },
+  "dependencies": {
+    "mobx": "^2.7.0"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "babel-cli": "^6.18.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-object-rest-spread": "^6.20.2",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-env": "^1.1.4",
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.1.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.6.0"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      "babel-plugin-transform-decorators-legacy",
+      "babel-plugin-transform-object-rest-spread",
+      "babel-plugin-transform-runtime"
+    ]
+  },
+  "ava": {
+    "babel": "inherit"
+  },
+  "eslintConfig": {
+    "extends": "airbnb"
+  }
+}
