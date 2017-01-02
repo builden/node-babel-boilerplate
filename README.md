@@ -52,6 +52,7 @@ $ yarn build
 ## eslint
 ### 安装
 ```bash
+$ yarn add babel-eslint -D
 $ yarn add eslint-config-airbnb -D
 
 $ yarn add eslint -D
@@ -65,8 +66,25 @@ $ yarn add eslint-plugin-react -D
 {
   // ...
   "eslintConfig": {
+    "parser": "babel-eslint",
     "extends": "airbnb"
   }
+}
+```
+
+### test目录增加.eslintrc支持ava，子目录无法支持插件eslint-plugin-ava
+```json
+{
+  "rules": {
+    "arrow-parens": "off"
+  }
+}
+```
+
+### 关闭VS Code自带的JS静态检测，修改工程设置
+```json
+{
+  "javascript.validate.enable": false
 }
 ```
 
@@ -75,8 +93,13 @@ $ yarn add eslint-plugin-react -D
 {
   "compilerOptions": {
     "target": "es6",
-    "experimentalDecorators": true
-  }
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }
 ```
 
