@@ -2,6 +2,7 @@
 
 ## 支持ES6、支持ES7
 * [babel6相关的插件列表](https://github.com/babel/babel/tree/master/packages)
+
 ### 安装babel和插件
 ```bash
 # 不建议安装成全局包，这样可以控制在不同的工程中使用不同的babel版本
