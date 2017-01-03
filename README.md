@@ -1,6 +1,7 @@
 # 使用babel让node支持es6和es7语法
 
 ## 支持ES6、支持ES7
+* [ECMAScript 6 入门](http://es6.ruanyifeng.com/)
 * [babel6相关的插件列表](https://github.com/babel/babel/tree/master/packages)
 
 ### 安装babel和插件
@@ -49,7 +50,10 @@ $ yarn start
 $ yarn build
 ```
 
-## eslint
+## ESLint
+* [ESLint官网](http://eslint.org/)
+* [Airbnb JavaScript编码规范](https://github.com/airbnb/javascript)
+* [Airbnb JavaScript编码规范 中文翻译](https://github.com/yuche/javascript)
 ### 安装
 ```bash
 $ yarn add babel-eslint -D
@@ -88,7 +92,7 @@ $ yarn add eslint-plugin-react -D
 }
 ```
 
-### 配置jsconfig.json，让vscode支持ES7中的Decorator
+### 配置VSCode的jsconfig.json，让vscode支持ES7中的Decorator
 ```json
 {
   "compilerOptions": {
@@ -103,8 +107,8 @@ $ yarn add eslint-plugin-react -D
 }
 ```
 
-## 单元测试ava
-* [Github](https://github.com/avajs/ava)
+## 单元测试AVA
+* [Github位置](https://github.com/avajs/ava)
 
 ### 安装
 ```bash
@@ -132,6 +136,7 @@ $ yarn test
 ```
 
 ## EditorConfig
+* [EditorConfig官网](http://editorconfig.org/)
 ### 安装VS Code插件 `EditorConfig for VS Code`
 ### 配置`.editorconfig`
 ```yaml
@@ -141,11 +146,13 @@ $ yarn test
 root = true
 
 # Unix-style newlines with a newline ending every file
-[*.js]
+[*]
 indent_style = space
 indent_size = 2
 charset = utf-8
 end_of_line = lf
-insert_final_newline = true
 trim_trailing_whitespace = true
+
+[*.js]
+insert_final_newline = true
 ```
