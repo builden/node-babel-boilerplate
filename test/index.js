@@ -1,6 +1,6 @@
 import test from 'ava';
 import mobx from 'mobx';
-import store from '../dist/index';
+import store from '../lib/index';
 
 test('mobx', t => {
   t.is(store.count, 0);

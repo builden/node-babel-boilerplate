@@ -126,7 +126,11 @@ $ yarn add ava --save-dev
     // ...
   },
   "ava": {
-    "babel": "inherit"
+    "babel": "inherit",
+    // 支持直接测试ES6代码
+    "require": [
+      "babel-register"
+    ]
   }
 }
 ```
