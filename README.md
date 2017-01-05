@@ -107,12 +107,14 @@ $ yarn add eslint-plugin-react -D
 }
 ```
 
-## 单元测试AVA
-* [Github位置](https://github.com/avajs/ava)
+## 单元测试AVA，覆盖测试Nyc
+* [AVA Github位置](https://github.com/avajs/ava)
+* [nyc Github位置](https://github.com/istanbuljs/nyc)
 
 ### 安装
 ```bash
 $ yarn add ava --save-dev
+$ yarn add nyc --save-dev
 ```
 ### 配置package.json
 ```json
@@ -120,7 +122,8 @@ $ yarn add ava --save-dev
   // ...
   "scripts": {
     // ...
-    "test": "ava"
+    "test": "nyc ava",
+    "report": "nyc report --reporter=html"
   },
   "babel": {
     // ...
@@ -137,6 +140,12 @@ $ yarn add ava --save-dev
 ### 执行用例
 ```bash
 $ yarn test
+```
+
+### 生成HTML覆盖测试报告
+生成在coverage目录下，需要手动执行index.html
+```bash
+$ yarn report
 ```
 
 ## EditorConfig
