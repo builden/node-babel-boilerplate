@@ -150,7 +150,9 @@ $ yarn report
 
 ## EditorConfig
 * [EditorConfig官网](http://editorconfig.org/)
+
 ### 安装VS Code插件 `EditorConfig for VS Code`
+
 ### 配置`.editorconfig`
 ```yaml
 # EditorConfig is awesome: http://EditorConfig.org
