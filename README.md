@@ -54,6 +54,7 @@ $ yarn build
 * [ESLint官网](http://eslint.org/)
 * [Airbnb JavaScript编码规范](https://github.com/airbnb/javascript)
 * [Airbnb JavaScript编码规范 中文翻译](https://github.com/yuche/javascript)
+* [补充编码规范](https://github.com/ryanmcdermott/clean-code-javascript)
 ### 安装
 ```bash
 $ yarn add babel-eslint -D
