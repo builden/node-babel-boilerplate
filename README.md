@@ -123,8 +123,8 @@ $ yarn add nyc --save-dev
   // ...
   "scripts": {
     // ...
-    "test": "nyc ava",
-    "report": "nyc report --reporter=html"
+    "test": "ava",
+    "coverage": "nyc ava"
   },
   "babel": {
     // ...
@@ -135,18 +135,26 @@ $ yarn add nyc --save-dev
     "require": [
       "babel-register"
     ]
-  }
+  },
+  "nyc": {
+    "reporter": [
+      "html",
+      "text"
+    ],
+    "cache": true
+  },
 }
 ```
-### 执行用例
+### 执行单元测试用例
 ```bash
 $ yarn test
 ```
 
-### 生成HTML覆盖测试报告
-生成在coverage目录下，需要手动执行index.html
+### 执行覆盖和单元测试，并生成HTML覆盖测试报告
+* 生成在coverage目录下，需要手动执行index.html
+* 在VS Code中可以安装`open in browser`插件，用于在VS中快速打开html页面
 ```bash
-$ yarn report
+$ yarn coverage
 ```
 
 ## EditorConfig
