@@ -22,6 +22,9 @@ $ yarn add babel-plugin-transform-decorators-legacy -D
 # 支持ES7的object-rest-spread
 # e.g. const newObj = {...obj};
 $ yarn add babel-plugin-transform-object-rest-spread -D
+
+# 支持ES7的class-properties
+$ yarn add babel-plugin-transform-class-properties -D
 ```
 ### 配置package.json
 ```json
@@ -37,6 +40,7 @@ $ yarn add babel-plugin-transform-object-rest-spread -D
       "env"
     ],
     "plugins": [
+      "babel-plugin-transform-class-properties",
       "babel-plugin-transform-decorators-legacy",
       "babel-plugin-transform-object-rest-spread",
       "babel-plugin-transform-runtime"

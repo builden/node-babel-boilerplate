@@ -556,7 +556,7 @@ babel-plugin-transform-async-to-generator@^6.16.0, babel-plugin-transform-async-
     babel-plugin-syntax-async-functions "^6.8.0"
     babel-runtime "^6.0.0"
 
-babel-plugin-transform-class-properties@^6.18.0:
+babel-plugin-transform-class-properties@^6.18.0, babel-plugin-transform-class-properties@^6.19.0:
   version "6.19.0"
   resolved "http://registry.npm.taobao.org/babel-plugin-transform-class-properties/download/babel-plugin-transform-class-properties-6.19.0.tgz#1274b349abaadc835164e2004f4a2444a2788d5f"
   dependencies:

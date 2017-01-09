@@ -1,6 +1,6 @@
 {
   "name": "node-babel-boilerplate",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "./dist/index.js",
   "author": "builden <billdeng@qq.com>",
   "license": "MIT",
@@ -18,6 +18,7 @@
     "ava": "^0.17.0",
     "babel-cli": "^6.18.0",
     "babel-eslint": "^7.1.1",
+    "babel-plugin-transform-class-properties": "^6.19.0",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-plugin-transform-object-rest-spread": "^6.20.2",
     "babel-plugin-transform-runtime": "^6.15.0",
@@ -34,6 +35,7 @@
       "env"
     ],
     "plugins": [
+      "babel-plugin-transform-class-properties",
       "babel-plugin-transform-decorators-legacy",
       "babel-plugin-transform-object-rest-spread",
       "babel-plugin-transform-runtime"
