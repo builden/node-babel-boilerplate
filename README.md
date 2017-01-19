@@ -40,8 +40,8 @@ $ yarn add babel-plugin-transform-class-properties -D
       "env"
     ],
     "plugins": [
-      "babel-plugin-transform-class-properties",
       "babel-plugin-transform-decorators-legacy",
+      "babel-plugin-transform-class-properties",
       "babel-plugin-transform-object-rest-spread",
       "babel-plugin-transform-runtime"
     ]
@@ -53,6 +53,10 @@ $ yarn add babel-plugin-transform-class-properties -D
 $ yarn start
 $ yarn build
 ```
+
+### 注意
+* babel `plugins` 设置
+> `babel-plugin-transform-decorators-legacy`必须在`babel-plugin-transform-class-properties`上面，否则在类中成员加装饰器会失败
 
 ## ESLint
 * [ESLint官网](http://eslint.org/)

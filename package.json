@@ -28,15 +28,15 @@
     "eslint-plugin-import": "^2.1.0",
     "eslint-plugin-jsx-a11y": "^3.0.2",
     "eslint-plugin-react": "^6.9.0",
-    "nyc": "^10.1.0"
+    "nyc": "^10.1.2"
   },
   "babel": {
     "presets": [
       "env"
     ],
     "plugins": [
-      "babel-plugin-transform-class-properties",
       "babel-plugin-transform-decorators-legacy",
+      "babel-plugin-transform-class-properties",
       "babel-plugin-transform-object-rest-spread",
       "babel-plugin-transform-runtime"
     ]
